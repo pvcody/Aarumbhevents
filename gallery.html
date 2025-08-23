@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - AARUMBH EVENTS</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="head">
+    <a href="#" class="logo">AARUMBH EVENTS</a>
+    <nav class="navbar">
+      <a href="home.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="s1.html">Services</a>
+      <a href="prices.html">Prices</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="review.html">Reviews</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div id="menu"><i class="fa-solid fa-bars-staggered"></i></div>
+  </header>
+
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <h1>Our Event Highlights</h1>
+
+    <!-- Birthday -->
+    <div class="event">
+      <h2>Birthday Celebrations</h2>
+      <div class="gallery-row">
+        <div class="gallery-item"><img src="birthday1.png"><div class="overlay"><span>Birthday</span></div></div>
+        <div class="gallery-item"><img src="birthdaylady.png"><div class="overlay"><span>Birthday</span></div></div>
+        <div class="gallery-item"><img src="bdaybhai.png"><div class="overlay"><span>Birthday</span></div></div>
+        <div class="gallery-item"><img src="bdaymom.png"><div class="overlay"><span>Birthday</span></div></div>
+        <div class="gallery-item"><img src="b5.png"><div class="overlay"><span>Birthday</span></div></div>
+      </div>
+    </div>
+
+    <!-- Festive -->
+    <div class="event">
+      <h2>Festive Celebrations</h2>
+      <div class="gallery-row">
+        <div class="gallery-item"><img src="diwali.png"><div class="overlay"><span>Festive</span></div></div>
+        <div class="gallery-item"><img src="fdiwali.png"><div class="overlay"><span>Festive</span></div></div>
+        <div class="gallery-item"><img src="festivevibes.png"><div class="overlay"><span>Festive</span></div></div>
+        <div class="gallery-item"><img src="lohri.png"><div class="overlay"><span>Festive</span></div></div>
+        <div class="gallery-item"><img src="f1.png"><div class="overlay"><span>Festive</span></div></div>
+      </div>
+    </div>
+
+    <!-- Proposal -->
+    <div class="event">
+      <h2>Dreamy Proposals</h2>
+      <div class="gallery-row">
+        <div class="gallery-item"><img src="proposal1.png"><div class="overlay"><span>Proposal</span></div></div>
+        <div class="gallery-item"><img src="robinurvashi.png"><div class="overlay"><span>Proposal</span></div></div>
+        <div class="gallery-item"><img src="propsallllll.png"><div class="overlay"><span>Proposal</span></div></div>
+        <div class="gallery-item"><img src="proposaldream.png"><div class="overlay"><span>Proposal</span></div></div>
+        <div class="gallery-item"><img src="proposal2.png"><div class="overlay"><span>Proposal</span></div></div>
+      </div>
+    </div>
+
+    <!-- Anniversary -->
+    <div class="event">
+      <h2>Anniversary Celebrations</h2>
+      <div class="gallery-row">
+        <div class="gallery-item"><img src="a1.png"><div class="overlay"><span>Anniversary</span></div></div>
+        <div class="gallery-item"><img src="a2.png"><div class="overlay"><span>Anniversary</span></div></div>
+        <div class="gallery-item"><img src="a45.png"><div class="overlay"><span>Anniversary</span></div></div>
+        <div class="gallery-item"><img src="a3.png"><div class="overlay"><span>Anniversary</span></div></div>
+        <div class="gallery-item"><img src="aannii.png"><div class="overlay"><span>Anniversary</span></div></div>
+      </div>
+    </div>
+
+    <!-- Bridal Shower -->
+    <div class="event">
+      <h2>Bridal Shower</h2>
+      <div class="gallery-row">
+        <div class="gallery-item"><img src="bridalurvi.png"><div class="overlay"><span>Bridal Shower</span></div></div>
+        <div class="gallery-item"><img src="bridal1.png"><div class="overlay"><span>Bridal Shower</span></div></div>
+        <div class="gallery-item"><img src="bridal33.png"><div class="overlay"><span>Bridal Shower</span></div></div>
+        <div class="gallery-item"><img src="bridalurvifriendd.png"><div class="overlay"><span>Bridal Shower</span></div></div>
+        <div class="gallery-item"><img src="bridal2.png"><div class="overlay"><span>Bridal Shower</span></div></div>
+      </div>
+    </div>
+
+    <!-- Other Events -->
+    <div class="event">
+      <h2>Other Events</h2>
+      <div class="gallery-row">
+        <div class="gallery-item"><img src="f3.png"><div class="overlay"><span>Other</span></div></div>
+        <div class="gallery-item"><img src="babymehra.png"><div class="overlay"><span>Other</span></div></div>
+        <div class="gallery-item"><img src="babyshower2.png"><div class="overlay"><span>Other</span></div></div>
+        <div class="gallery-item"><img src="cakeparty.png"><div class="overlay"><span>Other</span></div></div>
+        <div class="gallery-item"><img src="other1welcome home.png"><div class="overlay"><span>Other</span></div></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Script for Mobile Navbar -->
+  <script>
+    const menu = document.getElementById("menu");
+    const navbar = document.querySelector(".navbar");
+    menu.onclick = () => {
+      navbar.classList.toggle("active");
+    };
+  </script>
+
+</body>
+</html>

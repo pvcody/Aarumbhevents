@@ -1,0 +1,147 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --clr1: #222;
+  --clr2: deeppink;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: var(--clr1);
+  background: pink;
+}
+
+/* Header */
+.head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.head .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--clr2);
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--clr1);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  color: var(--clr2);
+}
+
+#menu {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Reviews Section */
+.reviews {
+  padding: 120px 20px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.reviews h1 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: var(--clr1);
+}
+
+/* Review Cards Container */
+.review-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* allows wrapping on small screens */
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Individual Review Card */
+.review-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  width: 300px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.review-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.review-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--clr2);
+  margin-top: 15px;
+}
+
+.review-card p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: #fff;
+    flex-direction: column;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: right 0.3s ease;
+    padding: 20px;
+  }
+
+  .navbar.active {
+    right: 0;
+  }
+
+  #menu {
+    display: block;
+    color: var(--clr1);
+  }
+
+  .review-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

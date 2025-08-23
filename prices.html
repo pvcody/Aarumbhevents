@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prices - Aarumbh Events</title>
+  <link rel="stylesheet" href="event3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="head">
+    <a href="#" class="logo">AARUMBH EVENTS</a>
+    <nav class="navbar">
+      <a href="home.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="s1.html">Services</a>
+      <a href="prices.html" class="active">Prices</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="review.html">Reviews</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div id="menu"><i class="fa-solid fa-bars-staggered"></i></div>
+  </header>
+
+  <!-- Prices Section -->
+  <section class="prices">
+    <h1 class="heading">Our <span>Prices</span></h1>
+
+    <div class="price-container">
+      
+      <!-- Birthday Plan -->
+      <div class="price-card">
+        <h2>Birthday Celebration</h2>
+        <p class="price">₹9,999</p>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> Decoration Setup</li>
+          <li><i class="fa-solid fa-check"></i> Cake Arrangement</li>
+          <li><i class="fa-solid fa-check"></i> Photography</li>
+        </ul>
+        <a href="contact.html" class="btn">Book Now</a>
+      </div>
+
+      <!-- Festive Plan -->
+      <div class="price-card">
+        <h2>Festive Celebration</h2>
+        <p class="price">₹14,999</p>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> Theme Decor</li>
+          <li><i class="fa-solid fa-check"></i> Catering Setup</li>
+          <li><i class="fa-solid fa-check"></i> Music & Lights</li>
+        </ul>
+        <a href="contact.html" class="btn">Book Now</a>
+      </div>
+
+      <!-- Proposal Plan -->
+      <div class="price-card">
+        <h2>Dreamy Proposal</h2>
+        <p class="price">₹19,999</p>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> Romantic Setup</li>
+          <li><i class="fa-solid fa-check"></i> Candle Light Decor</li>
+          <li><i class="fa-solid fa-check"></i> Photoshoot</li>
+        </ul>
+        <a href="contact.html" class="btn">Book Now</a>
+      </div>
+
+      <!-- Anniversary Plan -->
+      <div class="price-card">
+        <h2>Anniversary Celebration</h2>
+        <p class="price">₹24,999</p>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> Premium Decoration</li>
+          <li><i class="fa-solid fa-check"></i> Dinner Setup</li>
+          <li><i class="fa-solid fa-check"></i> Live Music</li>
+        </ul>
+        <a href="contact.html" class="btn">Book Now</a>
+      </div>
+
+      <!-- Other Events Column -->
+      <div class="price-card other-events">
+        <h2>Other Events</h2>
+        <ul>
+          <li><i class="fa-solid fa-star"></i> Corporate Parties – <span>₹29,999</span></li>
+          <li><i class="fa-solid fa-star"></i> Engagement Ceremony – <span>₹34,999</span></li>
+          <li><i class="fa-solid fa-star"></i> Baby Shower – <span>₹14,999</span></li>
+          <li><i class="fa-solid fa-star"></i> Farewell Party – <span>₹12,999</span></li>
+          <li><i class="fa-solid fa-star"></i> Cultural Events – <span>₹39,999</span></li>
+          <li><i class="fa-solid fa-star"></i> Family Functions – <span>₹24,999</span></li>
+        </ul>
+        <a href="contact.html" class="btn">Get Quote</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Script for mobile menu -->
+  <script>
+    let navbar = document.querySelector('.navbar');
+    document.querySelector('#menu').onclick = () => {
+      navbar.classList.toggle('active');
+    }
+    window.onscroll = () => {
+      navbar.classList.remove('active');
+    }  
+  </script>
+</body>
+</html>

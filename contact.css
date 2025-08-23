@@ -1,0 +1,152 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --clr1: #222;
+  --clr2: deeppink;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+/* Body */
+body {
+  background: #f9f9f9;
+  color: var(--clr1);
+}
+
+/* Sections */
+section {
+  min-height: 100vh;
+  padding: 8rem 10%;
+}
+
+/* Header/Navbar (same as your main css) */
+.head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--clr2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 8%;
+}
+.head .logo {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+}
+.head .navbar a {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  color: #fff;
+  transition: 0.3s;
+}
+.head .navbar a:hover,
+.head .navbar a.active {
+  color: var(--clr1);
+}
+#menu {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+/* Contact Section */
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+.heading span {
+  color: var(--clr2);
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact-form,
+.contact-info {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+
+.contact-form h2,
+.contact-info h2 {
+  margin-bottom: 1.5rem;
+  color: var(--clr2);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.4rem;
+}
+
+.contact-form button {
+  background: var(--clr2);
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.6rem;
+  transition: 0.3s;
+}
+.contact-form button:hover {
+  background: #c2185b;
+}
+
+.contact-info p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.contact-info i {
+  margin-right: 8px;
+  color: var(--clr2);
+}
+.contact-info a {
+  color: var(--clr1);
+}
+.contact-info a:hover {
+  color: var(--clr2);
+}
+
+.map {
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  html { font-size: 55%; }
+  .head .navbar { display: none; }
+  #menu { display: block; }
+  .contact-container { flex-direction: column; }
+}
+@media (max-width: 480px) {
+  html { font-size: 50%; }
+}

@@ -1,0 +1,202 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --clr1: #222;
+    --clr2: deeppink;
+}
+
+/* Reset & Globals */
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+html {
+    font-size: 65%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    overflow-x: hidden;
+}
+
+/* Scrollbar */
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+html::-webkit-scrollbar-track {
+    background: var(--clr2);
+}
+html::-webkit-scrollbar-thumb {
+    background: var(--clr1);
+}
+
+section { 
+    min-height: 100vh;
+    padding: 5rem 10%;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background: var(--clr2);
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: #b30059;
+    transform: scale(1.05);
+}
+.btn:active {
+    transform: scale(0.9);
+}
+
+/* Header */
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--clr2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 8%;
+}
+.head .logo {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+}
+.head .navbar a {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: 0.3s;
+}
+.head .navbar a:hover,
+.head .navbar a.active {
+    color: var(--clr1);
+}
+
+/* Hamburger */
+#menu {
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+/* Prices Section */
+.prices {
+    padding: 8rem 10% 4rem;
+    text-align: center;
+}
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    font-weight: bold;
+    color: var(--clr1);
+}
+.heading span {
+    color: var(--clr2);
+}
+
+/* Price Container */
+.price-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+}
+
+/* Price Card */
+.price-card {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    text-align: center;
+}
+.price-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.price-card h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--clr2);
+}
+.price {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--clr1);
+}
+
+/* Features List */
+.price-card ul {
+    list-style: none;
+    margin-bottom: 2rem;
+    text-align: left;
+    padding: 0 1rem;
+}
+.price-card ul li {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    color: #444;
+}
+.price-card ul li i {
+    color: var(--clr2);
+    margin-right: 0.8rem;
+}
+
+/* Other Events Special */
+.other-events ul {
+    text-align: left;
+}
+.other-events ul li span {
+    font-weight: 600;
+    color: var(--clr1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    html { font-size: 55%; }
+    .head .navbar { display: none; }
+    #menu { display: block; }
+
+    .navbar {
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        background: var(--clr2);
+        flex-direction: column;
+        display: none;
+    }
+    .navbar.active {
+        display: flex;
+    }
+    .navbar a {
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    html { font-size: 50%; }
+    .heading { font-size: 3.2rem; }
+    .price { font-size: 2.4rem; }
+}

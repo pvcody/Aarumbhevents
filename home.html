@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Planning Website</title>
+  <link rel="stylesheet" href="event1.css">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="head">
+    <a href="#" class="logo">AARUMBH EVENTS</a>
+    <nav class="navbar">
+      <a href="home.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="s1.html">Services</a>
+      <a href="prices.html">Prices</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="review.html">Reviews</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div id="menu"><i class="fa-solid fa-bars-staggered"></i></div>
+  </header>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="content">
+      <p> Plan Event With Aarumbh Events</p>
+      <h3>Let's Organize Your Day with Us <i class="fa-solid fa-heart"></i></h3>
+    
+      <P> </P>
+    </div>
+  </section>
+  
+
+  
+  <!-- Script for mobile menu -->
+  <script>
+    let navbar = document.querySelector('.navbar');
+    document.querySelector('#menu').onclick = () => {
+      navbar.classList.toggle('active');
+    }
+    window.onscroll = () => {
+      navbar.classList.remove('active');
+    }  
+  </script>
+</body>
+</html>
