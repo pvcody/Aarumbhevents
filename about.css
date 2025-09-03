@@ -1,0 +1,236 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --clr1: #222;
+    --clr2: deeppink;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+html {
+    font-size: 65%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    overflow-x: hidden;
+}
+
+/* Scrollbar */
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+html::-webkit-scrollbar-track {
+    background: var(--clr2);
+}
+html::-webkit-scrollbar-thumb {
+    background: var(--clr1);
+}
+
+section { 
+    min-height: 100vh;
+    padding: 1rem 10%;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: #aaa;
+    background: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    box-shadow: inset 0 0 0 0 deeppink;
+    transition: ease-out 0.5s;
+}
+.btn:hover {
+    color: #fff;
+    box-shadow: inset 0 0 0 100px deeppink;
+}
+.btn:active {
+    transform: scale(0.9);
+}
+
+/* Header */
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--clr2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 8%;
+}
+.head .logo {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+}
+.head .navbar a {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: 0.3s;
+}
+.head .navbar a:hover {
+    color: var(--clr1);
+}
+
+/* Hamburger */
+#menu {
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+/* Home */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("images/b1.png") no-repeat center center/cover;
+    height: 100vh;
+    text-align: center;
+}
+.home .content {
+    text-align: center;
+    padding-top:10rem;
+    max-width: 80rem;
+    margin: 3rem auto;
+}
+.home .content p {
+    font-size: 3rem;
+    color: var(--clr2);
+    letter-spacing: .5rem;
+    font-weight: 500;
+}
+.home .content h3 {
+    font-size: 4.8rem;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+/* About Us */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("images/aboutus2.png") no-repeat center center/cover;
+    height: 100vh;
+    text-align: center;
+}
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: var(--clr1);
+}
+.heading span {
+    color: var(--clr2);
+}
+.names {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    font-family: "Georgia", serif;
+    color: deeppink;
+    animation: fadeIn 2s ease-in-out;
+}
+.names span {
+    margin: 0 1.5rem;
+    color: #222;
+    font-weight: bold;
+}
+.names:hover {
+    color: #ff1493;
+    text-shadow: 0 0 10px #ff66b2, 0 0 20px #ff3385;
+    cursor: default;
+}
+
+/* Team Row (two pictures side by side) */
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+    margin: 3rem 0;
+    flex-wrap: wrap; /* allows stacking on mobile */
+}
+
+.person {
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.person img {
+    width: 220px;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.person:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+.person h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: var(--clr1);
+}
+.person p {
+    font-size: 1.4rem;
+    color: #555;
+}
+
+/* About Us content below team */
+.about-content {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #333;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    html { font-size: 55%; }
+    .head .navbar { display: none; }
+    #menu { display: block; }
+    .home .content h3 { font-size: 3.5rem; }
+    .home .content p { font-size: 2.2rem; }
+}
+@media (max-width: 480px) {
+    html { font-size: 50%; }
+    .home .content h3 { font-size: 2.8rem; }
+    .home .content p { font-size: 1.8rem; }
+    .names { font-size: 2rem; }
+}
